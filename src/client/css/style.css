@@ -34,7 +34,7 @@ body {
 }
 
 .modal-overlay.overlay-open {
-    background: #000;
+    background: rgba(0, 0, 0, 0.6);
     opacity: 1;
 }
 
