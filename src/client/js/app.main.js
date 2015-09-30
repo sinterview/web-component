@@ -85,7 +85,7 @@
             buildModal.call(this);
             registerEvents.call(this);
 
-            window.getComputedStyle(this.modal).height;
+            window.getComputedStyle(this.modal).height; // jshint ignore:line
 
             this.modal.className = this.modal.className + " modal-open";
             this.overlay.className = this.overlay.className + " overlay-open";
@@ -93,8 +93,10 @@
         },
 
         close: function closeFn() {
-            this.modal.className = this.modal.className.replace(" modal-open", "");
-            this.overlay.className = this.overlay.className.replace(" overlay-open", "");
+            this.modal.className = this.modal.className
+                    .replace(" modal-open", "");
+            this.overlay.className = this.overlay.className
+                    .replace(" overlay-open", "");
             this.modalOpen = false;
         }
     };
