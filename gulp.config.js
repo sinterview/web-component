@@ -18,6 +18,7 @@ module.exports = function nodeExportsFn() {
         css: clientCSS + "style.css",
         js: [
             clientJS + "**/.main.js",
+            clientJS + "**/.module.js",
             clientJS + "**/*.js",
             "!" + clientJS + "**/*.test.js"
         ],
